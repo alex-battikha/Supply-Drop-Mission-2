@@ -51,7 +51,7 @@ function setup() {
 
 	packageBody = Bodies.circle(width/2, 200, 5, {restitution:0.5, isStatic:true});
 	World.add(world, packageBody);
-	packageSprite.debug = true;
+	//packageSprite.debug = true;
 
 	helicopterSprite = createSprite(width/2, 200, 10,10);
 	helicopterSprite.addImage(helicopterIMG);
@@ -73,10 +73,6 @@ function draw() {
 
 	rectMode(CENTER);
 	background(0);
-
-	leftRect.display();
-	centerRect.display();
-	rightRect.display();
 
 	centerRectSprite.x = centerRect.position.x
 	centerRectSprite.y = centerRect.position.y
